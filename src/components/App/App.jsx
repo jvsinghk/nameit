@@ -1,9 +1,9 @@
-import { logDOM } from '@testing-library/react';
-import React, { Component } from 'react';
+import React from 'react';
 import Header from '../Header/Header';
+import SearchBox from '../SearchBox/SearchBox';
 import './App.css';
 
-export class App extends Component {
+export class App extends React.Component {
     state = {
         headerText: 'Name It!',
     };
@@ -11,16 +11,7 @@ export class App extends Component {
         return (
             <div>
                 <Header headTitle={this.state.headerText} />
-                <h3>{this.state.headerText}</h3>
-                <button
-                    onClick={() => {
-                        this.setState({
-                            headerText: 'Did Magic Happen?',
-                        });
-                    }}
-                >
-                    Magic Happens Here!
-                </button>
+                <SearchBox />
             </div>
         );
     }
