@@ -1,8 +1,8 @@
 {
-    "name": "name-it",
+    "name": "nameit",
     "version": "0.1.0",
     "private": true,
-    "homepage": "http://jvsinghk.github.io/name-it",
+    "homepage": "https://jvsinghk.github.io/nameit",
     "dependencies": {
         "@rstacruz/startup-name-generator": "0.3.0",
         "@testing-library/jest-dom": "^5.11.4",
